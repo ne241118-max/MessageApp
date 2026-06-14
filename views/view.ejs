@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>データ確認</title>
+</head>
+<body>
+  <h1>登録されているデータ</h1>
+
+  <ul>
+    <% messages.forEach((message) => { %>
+      <li><%= message %></li>
+    <% }); %>
+  </ul>
+
+  <p><a href="/">トップページへ戻る</a></p>
+</body>
+</html>

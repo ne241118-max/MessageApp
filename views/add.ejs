@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>データ登録</title>
+</head>
+<body>
+  <h1>データを登録する</h1>
+
+  <form action="/add" method="post">
+    <input type="text" name="text">
+    <input type="submit" value="登録">
+  </form>
+
+  <p>前回登録したメッセージ：<%= lastMessage %></p>
+
+  <p><a href="/">トップページへ戻る</a></p>
+</body>
+</html>

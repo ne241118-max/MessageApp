@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>検索</title>
+</head>
+<body>
+  <h1>メッセージ検索</h1>
+
+  <form action="/search" method="post">
+    <input type="text" name="searchText">
+    <input type="submit" value="検索">
+  </form>
+
+  <h2>検索結果</h2>
+
+  <ul>
+    <% messages.forEach((message) => { %>
+      <li><%= message %></li>
+    <% }); %>
+  </ul>
+
+  <p><a href="/">トップページへ戻る</a></p>
+</body>
+</html>
